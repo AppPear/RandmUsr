@@ -9,8 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var users = Users()
     var body: some View {
-        Text("Hello World")
+        VStack{
+            List{
+                ForEach(self.users.list, id: \.phone) { user in
+                    UserCell(user: user)
+                }
+            }
+        }.onAppear {
+            self.users.getNextPage()
+        }
     }
 }
 
