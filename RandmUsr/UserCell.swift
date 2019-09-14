@@ -13,17 +13,17 @@ struct UserCell: View {
     var user: User
     var body: some View {
         HStack{
-            URLImage(URL(string: user.picture.medium)!, configuration: ImageLoaderConfiguration(delay: 0.25))
+            URLImage(URL(string: user.picture.medium)!, configuration: ImageLoaderConfiguration(delay: 0, useInMemoryCache: true))
                 .resizable()
                 .frame(width: 60.0, height: 60)
                 .clipShape(Circle())
                 .padding([.trailing])
-                .animation(.spring())
+                .shadow(color: Color(white: 0.66), radius: 8)
             VStack(alignment: .leading){
-                Text("\(user.name.first) \(user.name.last)").font(.headline)
-                Text("\(user.email)").font(.callout)
+                Text("\(user.name.first.capitalized) \(user.name.last.capitalized)").font(.headline).padding(.bottom, 6)
+                Text("\(user.email)").font(.footnote).foregroundColor(Color.gray)
             }
-        }
+        }.padding([.top, .bottom], 6)
     }
 }
 

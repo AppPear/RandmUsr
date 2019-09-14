@@ -11,13 +11,27 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var users = Users()
     var body: some View {
-        VStack{
+        NavigationView{
             List{
                 ForEach(self.users.list, id: \.phone) { user in
-                    UserCell(user: user)
+                    NavigationLink(destination: DetailUserView(user: user)){
+                        UserCell(user: user)
+                    }
+                }
+                Text("loading")
+                    .onAppear {
+                        self.users.getNextPage()
                 }
             }
-        }.onAppear {
+            .navigationBarTitle(Text("Random users"))
+            .navigationBarItems(trailing: Button(action: {
+                print("filter")
+            }){
+                Image(systemName: "line.horizontal.3.decrease.circle").imageScale(.large)
+            })
+        }
+        .navigationViewStyle(DoubleColumnNavigationViewStyle())
+        .onAppear {
             self.users.getNextPage()
         }
     }

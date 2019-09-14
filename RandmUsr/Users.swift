@@ -14,16 +14,12 @@ class Users: ObservableObject {
 
     var list: [User] = [User]()
     var info: UserInfo? = nil
+    var currentPage: Int = 0
     let defaultResultNumber:Int = 16
     
     func getNextPage() {
-        var currentPage = 1
-
-        if (self.info != nil){
-            currentPage = info!.page
-        }
-        
         getUserListFromAPI(result: defaultResultNumber, page: currentPage + 1)
+        currentPage += 1
     }
     
     func getUserListFromAPI(result: Int, page: Int) {

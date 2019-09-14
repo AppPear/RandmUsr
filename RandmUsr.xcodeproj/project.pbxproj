@@ -24,6 +24,9 @@
 		0B5F78C6232C3395004FD7F0 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F78C5232C3395004FD7F0 /* UserCell.swift */; };
 		0B5F78C8232C34C8004FD7F0 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F78C7232C34C8004FD7F0 /* TestData.swift */; };
 		0B5F78CB232C3A58004FD7F0 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0B5F78CA232C3A58004FD7F0 /* URLImage */; };
+		0B5F78CD232CE5BA004FD7F0 /* DetailUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F78CC232CE5BA004FD7F0 /* DetailUserView.swift */; };
+		0B5F78CF232D266F004FD7F0 /* PersonalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F78CE232D266F004FD7F0 /* PersonalInfoView.swift */; };
+		0B5F78D1232D2D2F004FD7F0 /* LocationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F78D0232D2D2F004FD7F0 /* LocationInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		0B5F78C3232C301D004FD7F0 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		0B5F78C5232C3395004FD7F0 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		0B5F78C7232C34C8004FD7F0 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		0B5F78CC232CE5BA004FD7F0 /* DetailUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserView.swift; sourceTree = "<group>"; };
+		0B5F78CE232D266F004FD7F0 /* PersonalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoView.swift; sourceTree = "<group>"; };
+		0B5F78D0232D2D2F004FD7F0 /* LocationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,9 @@
 				0B5F7888232C2FB9004FD7F0 /* SceneDelegate.swift */,
 				0B5F788A232C2FB9004FD7F0 /* ContentView.swift */,
 				0B5F78C5232C3395004FD7F0 /* UserCell.swift */,
+				0B5F78CC232CE5BA004FD7F0 /* DetailUserView.swift */,
+				0B5F78CE232D266F004FD7F0 /* PersonalInfoView.swift */,
+				0B5F78D0232D2D2F004FD7F0 /* LocationInfoView.swift */,
 				0B5F78C2232C3000004FD7F0 /* API */,
 				0B5F78C1232C2FF2004FD7F0 /* Model */,
 				0B5F78C0232C2FDC004FD7F0 /* Helpers */,
@@ -323,8 +332,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B5F78CD232CE5BA004FD7F0 /* DetailUserView.swift in Sources */,
 				0B5F78BF232C2FD2004FD7F0 /* AnyDecodable.swift in Sources */,
 				0B5F78C8232C34C8004FD7F0 /* TestData.swift in Sources */,
+				0B5F78D1232D2D2F004FD7F0 /* LocationInfoView.swift in Sources */,
 				0B5F78C4232C301D004FD7F0 /* Users.swift in Sources */,
 				0B5F78BB232C2FD2004FD7F0 /* RandomUserAPI.swift in Sources */,
 				0B5F78BE232C2FD2004FD7F0 /* UserModel.swift in Sources */,
@@ -332,6 +343,7 @@
 				0B5F78BC232C2FD2004FD7F0 /* AnyCodable.swift in Sources */,
 				0B5F7889232C2FB9004FD7F0 /* SceneDelegate.swift in Sources */,
 				0B5F78BD232C2FD2004FD7F0 /* AnyEncodable.swift in Sources */,
+				0B5F78CF232D266F004FD7F0 /* PersonalInfoView.swift in Sources */,
 				0B5F78C6232C3395004FD7F0 /* UserCell.swift in Sources */,
 				0B5F788B232C2FB9004FD7F0 /* ContentView.swift in Sources */,
 			);
@@ -437,6 +449,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -490,6 +503,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
