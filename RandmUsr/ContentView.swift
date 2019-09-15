@@ -33,6 +33,7 @@ struct ContentView: View {
         .navigationViewStyle(DoubleColumnNavigationViewStyle())
         .onAppear {
             self.users.getNextPage()
+            UITableView.appearance().separatorColor = .clear
         }
     }
 }

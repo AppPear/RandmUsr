@@ -20,7 +20,7 @@ struct UserCell: View {
                 .padding([.trailing])
                 .shadow(color: Color(white: 0.66), radius: 8)
             VStack(alignment: .leading){
-                Text("\(user.name.first.capitalized) \(user.name.last.capitalized)").font(.headline).padding(.bottom, 6)
+                Text("\(user.name.first.capitalized) \(user.name.last.capitalized)").font(.headline).padding(.bottom, 4)
                 Text("\(user.email)").font(.footnote).foregroundColor(Color.gray)
             }
         }.padding([.top, .bottom], 6)
