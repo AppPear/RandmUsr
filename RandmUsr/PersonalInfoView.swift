@@ -17,6 +17,7 @@ struct PersonalInfoView: View {
                     .foregroundColor(Color.white)
                     .shadow(color: Color(white:0.9), radius: 16)
                 VStack(alignment: .leading){
+                    Text("Personal info:").bold().padding(.bottom)
                     Cell(firstCol: "Full name: ", secondCol: "\(user.name.first.capitalized) \(user.name.last.capitalized)")
                     Cell(firstCol: "Nationality: ", secondCol: user.nat)
                     Cell(firstCol: "Date of birth: ", secondCol: formatDate(dateString: user.dob.date))
