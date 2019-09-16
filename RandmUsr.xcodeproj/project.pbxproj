@@ -28,6 +28,7 @@
 		0B5F78CF232D266F004FD7F0 /* PersonalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F78CE232D266F004FD7F0 /* PersonalInfoView.swift */; };
 		0B5F78D1232D2D2F004FD7F0 /* LocationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F78D0232D2D2F004FD7F0 /* LocationInfoView.swift */; };
 		0B5F790F232D5283004FD7F0 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F790E232D5283004FD7F0 /* test.swift */; };
+		0BD15FDC232F9EFA0090000F /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD15FDB232F9EFA0090000F /* Spinner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		0B5F78CE232D266F004FD7F0 /* PersonalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoView.swift; sourceTree = "<group>"; };
 		0B5F78D0232D2D2F004FD7F0 /* LocationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoView.swift; sourceTree = "<group>"; };
 		0B5F790E232D5283004FD7F0 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		0BD15FDB232F9EFA0090000F /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				0B5F78CC232CE5BA004FD7F0 /* DetailUserView.swift */,
 				0B5F78CE232D266F004FD7F0 /* PersonalInfoView.swift */,
 				0B5F78D0232D2D2F004FD7F0 /* LocationInfoView.swift */,
+				0BD15FDB232F9EFA0090000F /* Spinner.swift */,
 				0B5F78C2232C3000004FD7F0 /* API */,
 				0B5F78C1232C2FF2004FD7F0 /* Model */,
 				0B5F78C0232C2FDC004FD7F0 /* Helpers */,
@@ -342,6 +345,7 @@
 				0B5F78C4232C301D004FD7F0 /* Users.swift in Sources */,
 				0B5F78BB232C2FD2004FD7F0 /* RandomUserAPI.swift in Sources */,
 				0B5F78BE232C2FD2004FD7F0 /* UserModel.swift in Sources */,
+				0BD15FDC232F9EFA0090000F /* Spinner.swift in Sources */,
 				0B5F7887232C2FB9004FD7F0 /* AppDelegate.swift in Sources */,
 				0B5F78BC232C2FD2004FD7F0 /* AnyCodable.swift in Sources */,
 				0B5F7889232C2FB9004FD7F0 /* SceneDelegate.swift in Sources */,
